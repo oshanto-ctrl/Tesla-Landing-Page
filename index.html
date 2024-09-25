@@ -12,9 +12,6 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="./public/images/favicon.ico" type="image/x-icon">
 
-
-
-
 </head>
 
 <body>
@@ -33,7 +30,7 @@
     <header class="navbar">
 
         <!-- Logo -->
-        <img src="./public/images/tesla.svg" alt="Tesla Detailed Logo" class="h-5">
+        <img src="./public/images/tesla.svg" alt="Tesla Detailed Logo" class="h-5 cursor-pointer">
 
         <!-- Nav Links -->
         <div class="hidden lg:block">
@@ -42,16 +39,25 @@
             <a href="#modelX" class="navbar_link">Model X</a>
             <a href="#modelY" class="navbar_link">Model Y</a>
             <a href="#solarRoof" class="navbar_link">Solar Roof</a>
-            <a href="#solarPanels" class="navbar_link">Solar Panels</a>
+            <a href="#solarPanel" class="navbar_link">Solar Panels</a>
         </div>
 
         <!-- External Links-->
         <div class="flex justify-between items-center">
-            <div class="hidden lg:block">
-                <a href="#shop" class="navbar_link">Shop</a>
-                <a href="#account" class="navbar_link">Account</a>
+            <div class="hidden lg:flex lg:items-center lg:space-x-4">
+
+                <a href="#customer_care" class="navbar_link">
+                    <img class="w-10 h-auto" src="./public/images/question_mark.svg" alt="Tesla Customer Care">
+                </a>
+
+                <a href="#stores" class="navbar_link">
+                    <img class="w-10 h-auto" src="./public/images/web.svg" alt="Tesla Stores">
+                </a>
             </div>
-            <a href="#menu" class="navbar_link">Menu</a>
+
+            <a href="#menu" class="navbar_link">
+                <img class="w-10 h-auto" src="./public/images/menu.svg" alt="Tesla Menu">
+            </a>
         </div>
 
 
@@ -79,10 +85,7 @@
 
         <!-- Bouncing scroll down button -->
         <a href="#model3">
-            <svg class="scroll_down_svg" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
-                <path stroke="var(--tds-icon--fill, #171a20)" stroke-width="1.5" d="m19.5 12.5-4.5 4-4.5-4" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
+            <img src="./public/images/down.svg" class="scroll_down_svg" alt="down arrow">
         </a>
 
     </section>
@@ -110,10 +113,7 @@
 
         <!-- Bouncing scroll down button -->
         <a href="#modelX">
-            <svg class="scroll_down_svg" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
-                <path stroke="var(--tds-icon--fill, #171a20)" stroke-width="1.5" d="m19.5 12.5-4.5 4-4.5-4" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
+            <img src="./public/images/down.svg" class="scroll_down_svg" alt="down arrow">
         </a>
 
     </section>
@@ -141,10 +141,7 @@
 
         <!-- Bouncing scroll down button -->
         <a href="#modelY">
-            <svg class="scroll_down_svg" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
-                <path stroke="var(--tds-icon--fill, #171a20)" stroke-width="1.5" d="m19.5 12.5-4.5 4-4.5-4" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
+            <img src="./public/images/down.svg" class="scroll_down_svg" alt="down arrow">
         </a>
 
     </section>
@@ -173,10 +170,7 @@
 
         <!-- Bouncing scroll down button -->
         <a href="#solarRoof">
-            <svg class="scroll_down_svg" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
-                <path stroke="var(--tds-icon--fill, #171a20)" stroke-width="1.5" d="m19.5 12.5-4.5 4-4.5-4" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
+            <img src="./public/images/down.svg" class="scroll_down_svg" alt="down arrow">
         </a>
 
     </section>
@@ -205,10 +199,7 @@
 
         <!-- Bouncing up button -->
         <a href="#solarPanel">
-            <svg class="scroll_down_svg" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
-                <path stroke="var(--tds-icon--fill, #171a20)" stroke-width="1.5" d="m19.5 12.5-4.5 4-4.5-4" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
+            <img src="./public/images/down.svg" class="scroll_down_svg" alt="down arrow">
         </a>
 
     </section>
@@ -236,14 +227,7 @@
 
         <!-- Bouncing scroll down button -->
         <a href="#modelS" class="scroll-smooth">
-            <svg class="scroll_up_svg" fill="#000000" height="800px" width="800px" version="1.1" id="Layer_1"
-                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330"
-                xml:space="preserve">
-                <path id="XMLID_224_"
-                    d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394
-	l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393
-	C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z" />
-            </svg>
+            <img src="./public/images/up.svg" class="scroll_up_svg" alt="up arrow">
         </a>
 
     </section>
@@ -253,19 +237,19 @@
 
     <!-- Scripts -->
     <script>
-         // Play the audio when the page loads
-    window.addEventListener('DOMContentLoaded', function() {
-      var audio = document.getElementById('opening-sound');
-      audio.play();
-    });
+        // Play the audio when the page loads
+        window.addEventListener('DOMContentLoaded', function () {
+            var audio = document.getElementById('opening-sound');
+            audio.play();
+        });
 
-    // Stop the audio when the page is reloaded
-    window.addEventListener('beforeunload', function() {
-      var audio = document.getElementById('opening-sound');
-      audio.pause();
-      audio.currentTime = 0;
-    });
+        // Stop the audio when the page is reloaded
+        window.addEventListener('beforeunload', function () {
+            var audio = document.getElementById('opening-sound');
+            audio.pause();
+            audio.currentTime = 0;
+        });
     </script>
 </body>
 
-</html> 
+</html>

@@ -556,6 +556,18 @@ video {
   display: none;
 }
 
+.m-2{
+  margin: 0.5rem;
+}
+
+.ml-2{
+  margin-left: 0.5rem;
+}
+
+.mr-2{
+  margin-right: 0.5rem;
+}
+
 .flex{
   display: flex;
 }
@@ -568,6 +580,14 @@ video {
   height: 1.25rem;
 }
 
+.h-auto{
+  height: auto;
+}
+
+.w-10{
+  width: 2.5rem;
+}
+
 .cursor-pointer{
   cursor: pointer;
 }
@@ -578,6 +598,10 @@ video {
 
 .justify-between{
   justify-content: space-between;
+}
+
+.justify-around{
+  justify-content: space-around;
 }
 
 .scroll-smooth{
@@ -632,6 +656,17 @@ html {
 .navbar_link:hover{
   background-color: rgb(24 27 33 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.1;
+}
+
+.navbar_link > div{
+  display: flex;
+  align-items: center;
+}
+
+.navbar_link > div > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 /* Car Section */
@@ -792,5 +827,25 @@ html {
 @media (min-width: 1024px){
   .lg\:block{
     display: block;
+  }
+
+  .lg\:flex{
+    display: flex;
+  }
+
+  .lg\:items-center{
+    align-items: center;
+  }
+
+  .lg\:space-x-4 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:space-x-2 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 }
